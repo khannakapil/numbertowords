@@ -5,11 +5,11 @@ import (
 )
 
 //maxNumber is the maximum allowed number to convert
-const maxNumber = 99999
+const MaxNumber = 99999
 
 //Convert converts numbers to words
 func Convert(number int) (string, error) {
-	if number < 0 || number > maxNumber {
+	if number < 0 || number > MaxNumber {
 		return "", errors.New("error occurred")
 	}
 
